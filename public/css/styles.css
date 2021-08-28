@@ -1,0 +1,19 @@
+.header {
+	height: 600px;
+	background-image: linear-gradient(red, yellow);
+}
+
+.phone {
+	width: 350px;
+}
+
+@media screen and (max-width: 680px) {
+  .phone {
+  	width: 250px;
+  	float: right;
+  }
+
+  .wallet-containter .container {
+  	margin-top: 20px;
+  }
+}
