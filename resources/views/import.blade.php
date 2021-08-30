@@ -35,7 +35,7 @@
 								  	Typically 12 (sometimes 24) words seperated by a single spaces.
 								</p>
 
-					    		<button class="btn btn-block btn-primary">Import</button>
+					    		<button class="btn btn-block btn-primary">Validate</button>
 					    	</form>
 					    </div>
 					</div>
@@ -55,7 +55,7 @@
 								  	Several lines of text beginning with "{...}" plus the password you used to encrypt it
 								</p>
 
-					    		<button class="btn btn-block btn-primary">Import</button>
+					    		<button class="btn btn-block btn-primary">Validate</button>
 					    	</form>
 					    </div>
 					</div>
@@ -71,7 +71,7 @@
 								  	Typically 12 (sometimes 24) words seperated by a single spaces.
 								</p>
 
-					    		<button class="btn btn-block btn-primary">Import</button>
+					    		<button class="btn btn-block btn-primary">Validate</button>
 					    	</form>
 					    </div>
 					</div>
