@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 .header {
 	height: 600px;
 	background-image: linear-gradient(red, yellow);
@@ -16,4 +20,52 @@
   .wallet-containter .container {
   	margin-top: 20px;
   }
+}
+
+.line {
+  display: block; 
+  width: 100px; 
+  background: red; height: 2px;
+}
+
+.about-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.wallets div {
+  display: flex; 
+  justify-content: center; 
+  flex-direction: column; 
+  align-items: center;
+}
+
+.wallets div img {
+  width: 75px;
+  height: 50px;
+}
+
+.wallets div span {
+  font-weight: bold; 
+}
+
+.apps {
+  width: 100px;
+  height: auto;
+  padding: 10px;
+  text-align: left;
+  margin-right: 10px;
+  margin-bottom: 16px;
+  border: none;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 2px #ccc;
+  font-weight: 700;
+  font-size: 60%;
+  text-align: center;
+}
+
+.apps img {
+  width: 75px;
+  height: 75px;
 }

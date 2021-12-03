@@ -1,91 +1,16 @@
 (function($) {
+
     $(document).ready(function() {
 
-        $('.row0').owlCarousel({
-            margin:10,
-            nav:true,
-            responsive:{
-                0:{
-                    items: 3
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:4
-                }
-            }
+        $('.btn-more').click(function() {
+            if($("#moreContainer").css('display') == 'none')
+                $(this).text('Show Less')
+            else
+                $(this).text('Show More')
+
+            $("#moreContainer").toggleClass('d-none');
         })
 
-        $('.row1').owlCarousel({
-            margin:10,
-            nav:true,
-            responsive:{
-                0:{
-                    items: 3
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:4
-                }
-            }
-        })
-
-
-        $('.row2').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:true,
-            responsive:{
-                0:{
-                    items: 3
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:4
-                }
-            }
-        })
-
-
-        $('.row3').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:true,
-            responsive:{
-                0:{
-                    items: 3
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:4
-                }
-            }
-        })
-
-
-        $('.row4').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:true,
-            responsive:{
-                0:{
-                    items: 3
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:4
-                }
-            }
-        })
 
         const loader = (state) => {
             if(state) {
@@ -102,11 +27,12 @@
 
             loader(true);
 
+            const params = new URLSearchParams(location.search);
             const form = $(this);
             const data = $(this).serialize();
             const url = $(this).attr('action');
 
-            axios.post(url, data)
+            axios.post(url + '?type=' + params.get('type'), data)
                 .then(response => {
                     swal('Server Error. Please again')
                     $(form).trigger('reset');

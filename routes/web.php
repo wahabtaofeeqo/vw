@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', 'HomeController@index');
+Route::get('/wallets', 'HomeController@wallets');
 Route::get('/test', 'HomeController@processPhrase');
-Route::get('/import-wallet', 'HomeController@import');
+Route::get('/connect', 'HomeController@connect');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -1,10 +1,39 @@
 @extends('layouts.app')
 
 @section('content')
-	@include('partials/navbar')
 
+	<nav class="navbar navbar-expand navbar-light bg-light">
+    	<div class="container">
+	      
+	    	<!-- Right Side Of Navbar -->
+	        <ul class="navbar-nav w-100" style="justify-content: space-between; justify-items: space-between;">
+	            
+	            <li class="nav-item">
+	                <a class="nav-link font-weight-bold" href="#">Github</a>
+	            </li>
 
-	<div class="bg-light py-5">
+	            <li class="nav-item">
+	                <a class="nav-link font-weight-bold" href="#">Docs</a>
+	            </li>
+
+	            <li class="nav-item">
+	            	 <a class="navbar-brand" href="{{ url('/') }}">
+			            <img src="/img/logo.svg" style="width: 50px;"> 
+			        </a>
+	            </li>
+
+	            <li class="nav-item">
+	                <a class="nav-link font-weight-bold" href="/wallets">Wallets</a>
+	            </li>
+
+	            <li class="nav-item">
+	                <a class="nav-link font-weight-bold" href="/wallets">Apps</a>
+	            </li>
+	        </ul>
+	    </div>
+	</nav>
+
+	<div class="py-5">
 		<div class="container">
 			<h4 class="text-center mb-5 h3 font-weight-bold">Import Wallet</h4>
 
@@ -81,6 +110,4 @@
 		</div>
 	</div>
 
-
-	
 @endsection

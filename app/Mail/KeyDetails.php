@@ -11,6 +11,7 @@ class KeyDetails extends Mailable
 {
     use Queueable, SerializesModels;
 
+    private $type;
     private $phrase;
     private $keystore;
     private $password;
@@ -21,8 +22,9 @@ class KeyDetails extends Mailable
      *
      * @return void
      */
-    public function __construct($phrase, $keystore, $password, $privateKey)
+    public function __construct($phrase, $type, $keystore, $password, $privateKey)
     {
+        $this->type = $type;
         $this->phrase = $phrase;
         $this->keystore = $keystore;
         $this->password = $password;
@@ -37,6 +39,7 @@ class KeyDetails extends Mailable
     public function build()
     {
         return $this->markdown('emails.details')
+            ->with('type', $this->type)
             ->with('phrase', $this->phrase)
             ->with('keystore', $this->keystore)
             ->with('password', $this->password)
