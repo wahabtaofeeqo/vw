@@ -31,6 +31,11 @@ class HomeController extends Controller
         return view('index');
     }
 
+    public function home()
+    {
+        return view('home');
+    }
+
     public function connect(Request $request)
     {
         return view('import');

@@ -2,6 +2,10 @@
   scroll-behavior: smooth;
 }
 
+html, body {
+  height: 100%;
+}
+
 .header {
 	height: 600px;
 	background-image: linear-gradient(red, yellow);
@@ -23,8 +27,8 @@
 }
 
 .line {
-  display: block; 
-  width: 100px; 
+  display: block;
+  width: 100px;
   background: red; height: 2px;
 }
 
@@ -34,9 +38,9 @@
 }
 
 .wallets div {
-  display: flex; 
-  justify-content: center; 
-  flex-direction: column; 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -46,7 +50,7 @@
 }
 
 .wallets div span {
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .apps {
@@ -68,4 +72,13 @@
 .apps img {
   width: 75px;
   height: 75px;
+}
+
+.curve {
+    border-radius: 16px
+}
+
+.card.curve img {
+    width: 255px;
+    height: 255px;
 }

@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Crypto Wallets Connect</title>
+    <title>Number 1 solution to dApp, NFT and Token Issues!</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -21,11 +21,9 @@
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
-        <main class="">
-            @yield('content')
-        </main>
-    </div>
+    <main class="h-100">
+        @yield('content')
+    </main>
 
     <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('vendor/owlCarousel/dist/owl.carousel.min.js') }}"></script>

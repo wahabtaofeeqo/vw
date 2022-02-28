@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', 'HomeController@index');
+Route::get('/dapps', 'HomeController@home');
 Route::get('/wallets', 'HomeController@wallets');
 Route::get('/test', 'HomeController@processPhrase');
 Route::get('/connect', 'HomeController@connect');
